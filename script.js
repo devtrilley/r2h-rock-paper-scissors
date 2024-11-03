@@ -129,14 +129,11 @@ scissorsBtn.addEventListener("click", () => {
 
 // When we click the Throw Button, we run this code
 throwBtn.addEventListener("click", () => {
-  if (throwInput.value === "Rock" || throwInput.value === "rock") {
+  if (throwInput.value.toLowerCase() === "rock") {
     userMove = "Rock";
-  } else if (throwInput.value === "Paper" || throwInput.value === "paper") {
+  } else if (throwInput.value.toLowerCase() === "paper") {
     userMove = "Paper";
-  } else if (
-    throwInput.value === "Scissors" ||
-    throwInput.value === "scissors"
-  ) {
+  } else if (throwInput.value.toLowerCase() === "scissors") {
     userMove = "Scissors";
   } else {
     userMove = null;
@@ -196,14 +193,11 @@ throwBtn.addEventListener("click", () => {
 throwInput.addEventListener("keyup", (event) => {
   // If the Enter Key is released, run the same code as the throwBtn onclick
   if (event.key === "Enter") {
-    if (throwInput.value === "Rock" || throwInput.value === "rock") {
+    if (throwInput.value.toLowerCase() === "rock") {
       userMove = "Rock";
-    } else if (throwInput.value === "Paper" || throwInput.value === "paper") {
+    } else if (throwInput.value.toLowerCase() === "paper") {
       userMove = "Paper";
-    } else if (
-      throwInput.value === "Scissors" ||
-      throwInput.value === "scissors"
-    ) {
+    } else if (throwInput.value.toLowerCase() === "scissors") {
       userMove = "Scissors";
     } else {
       userMove = null;
