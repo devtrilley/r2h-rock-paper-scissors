@@ -7,21 +7,96 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p class="result-message">Welcome to Rock, Paper, Scissors! Click on any option to begin playing...</p>
+    <header>
+      <img class="logo" src="trps-logo.png" alt="" />
+    </header>
 
-    <button class="button rock-btn">Rock</button>
-    <button class="button paper-btn">Paper</button>
-    <button class="button scissors-btn">Scissors</button>
+    <main>
+      <section class="welcome-section">
+        <div class="welcome-img-container">
+          <img
+            src="rock-flexing.webp"
+            alt="The Rock flexing and yelling"
+            class="rock-flexing-img"
+          />
+        </div>
+        <div class="welcome-message-container">
+          <h2 class="welcome-heading">
+            FINALLY… The Rock has come to your screen!
+          </h2>
+          <p class="welcome-message">
+            So you finally had the guts to come and play The Rock, Paper,
+            Scissors, huh? Many men have tried, and many men have failed, but
+            The Rock is supposed to be defeated by the likes of you? You think
+            you have what it takes to outsmart the Rock? Guess what? IT DOESN'T
+            MATTER WHAT YOU PICK – The Rock knows every move, every trick, and
+            every play, and The Rock is here to lay the smackdown on any jabroni
+            that comes his way! Think you have what it takes to go one-on-one
+            with The Great One? Well, if you're gonna mess with the Brahma Bull,
+            you better be ready to get the horns. IF YOU SMELL WHAT THE ROCK IS
+            COOKING. Click <a href="#game-section">HERE</a> or scroll down to
+            begin playing.
+          </p>
+        </div>
+      </section>
 
-    <p class="">Score: Wins: 0, Losses: 0, Ties: 0</p>
+      <section class="game-section" id="game-section">
+        <div class="result-container">
+          <p class="result-message">Click on any option to begin playing...</p>
+        </div>
+
+        <div class="button-container">
+          <button class="button rock-btn">
+            <img
+              class="button-img"
+              src="rock-btn-img.png"
+              alt="Image of Dwayne 'The Rock' Johnson, inside of the respective button"
+            />
+          </button>
+          <button class="button paper-btn">
+            <img
+              class="button-img"
+              src="paper-btn-img.png"
+              alt="Image of an AI paper emoji inside of the respective button"
+            />
+          </button>
+          <button class="button scissors-btn">
+            <img
+              class="button-img"
+              src="scissors-btn-img.png"
+              alt="Image of a pair of scissors inside of the respective button"
+            />
+          </button>
+        </div>
+
+        <div class="input-container">
+          <input
+            class="throw-input"
+            type="text"
+            placeholder="Type your choice..."
+          />
+          <button class="throw-btn">Throw</button>
+        </div>
+
+        <div class="score-container">
+          <p class="score-message">Score: Wins: 0, Losses: 0, Ties: 0</p>
+          <button class="reset-btn" type="button">Reset</button>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
 </html>
 
-
 <!-- Ideas:
 - Start with emojis
 - Make the rock the rock button. call it "The Rock, Paper, Scissors lol" 
 - background is pics of the rock alternating every few minutes.
+- eventually make a link and stuff like that so it's a game on my site
+- make it responsive duh
+- implement a text input so you can type rock, paper, or scissors and it will capitalize the first letter and then match it if it's R, P, or S.
+- make a bank where you can bet money. depends how much you have in the bank. then maybe you have to beg the rock for money to get more.
+- instead of "computer" have it say Rocky. there should be 8bit gifs above the text too of you being a skinny gym wimp and the rock in his wrestling attire
+- certain words in the opening message should have a span element so we can style to words a little bit
 -->

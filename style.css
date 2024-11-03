@@ -1,0 +1,190 @@
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding-bottom: 10rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+
+.logo {
+  width: 35%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  margin-bottom: 5%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.welcome-img-container {
+  width: 30%;
+}
+
+.welcome-message-container {
+  width: 70%;
+}
+
+.welcome-heading {
+  font-size: 5rem;
+  font-style: italic;
+  margin-bottom: 2%;
+}
+
+.welcome-message {
+  font-size: 2.25rem;
+  line-height: 3.5rem;
+}
+
+.rock-flexing-img {
+  width: 100%;
+  /* aspect-ratio: 1; */
+  object-fit: cover;
+  object-position: top;
+}
+
+.game-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.result-message {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+  margin-bottom: 5%;
+}
+
+.button {
+  width: 30%;
+  max-width: 600px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 4px solid #caa81a;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: rgb(42, 42, 42);
+}
+
+.button:active {
+  background-color: rgb(70, 70, 70);
+}
+
+.button-img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rock-btn {
+}
+
+.paper-btn {
+}
+
+.scissors-btn {
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* border: 1px solid pink; */
+  margin-bottom: 5%;
+  gap: 2%;
+
+}
+
+.throw-input {
+  background-color: transparent;
+  border: 2px solid #caa81a;
+  color: white;
+  border-radius: 2rem;
+  width: 40%;
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.throw-input:focus {
+  outline: 1px solid #e6be1e;
+}
+
+.throw-input:hover {
+  background-color: rgb(42, 42, 42);
+}
+
+.score-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+.score-message {
+  font-size: 3.75rem;
+  text-align: center;
+}
+
+.throw-btn, .reset-btn {
+  border: none;
+  width: 12%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #e6be1e;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.throw-btn:hover, .reset-btn:hover {
+  background-color: #d2ad19;
+}
+
+.throw-btn:active, .reset-btn:active {
+  background-color: #c6a317;
+}
