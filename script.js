@@ -1,4 +1,4 @@
-/* ALGORITHM:
+/* ALGORITHM/PSEUDOCODE:
   - We click a button option (RPS)
   - The game begins, randomly choosing a computer move using Math.random
   - We compare the computer move to the users move using if statements
